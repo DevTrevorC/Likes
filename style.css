@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.4em;
+    margin-top: .5em;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.whiteText {
+    color: white;
+}
+
+.border {
+    border: 4px solid black;
+}
+/* utility classes */
+
+/* body elements */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    /* flex-direction: column; */
+}
+
+header {
+    width: 1000px;
+    height: 60px;
+    background-color: black;
+}
+
+header h1 {
+    margin-left: 1em;
+}
+
+.container > h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: .3rem;
+    text-align: center;
+}
+
+#usersProfile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    align-self: flex-start;
+}
+
+#usersProfile a {
+    font-size: 1.4em;
+}
+
+#usersProfile >* {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#usersProfile img {
+    width: 6em;
+}
+
+#usersFeed {
+    flex: 3;
+}
+
+.feedItems {
+    margin-bottom: 1em;
+    padding: 2em;
+}
+
+button {
+    background-color: rgb(255,217,102);
+    font-size: x-large;
+    padding: .25em .5em;
+    box-shadow: 2px 3px black;
+}
+/* body elements */

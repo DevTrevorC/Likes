@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex whiteText">
+        <h1>Network</h1>
+      </header>
+      <h1>Your Feed</h1>
+      <div class="flex">
+        <div id="usersProfile" class="border">
+          <img src="user-circle.png" alt="User's profile picture" />
+          <a href="#">Add an avatar</a>
+          <h1>James Doe</h1>
+        </div>
+        <div id="UsersFeed">
+          <div class="feedItems border">
+            <div class="feedItemInfo flex">
+              <h1 class="feedItemUsername">Neil M</h1>
+              <div class="likes flex">
+                <div id="likes1" class="likeCount">9 like(s)</div>
+                <button class="likeButton" onclick="addLike(0)">Like</button>
+              </div>
+            </div>
+            <p>
+              I just set up this new discord bot, let me know what you all
+              think. <a href="#">Link</a>
+            </p>
+          </div>
+          <div class="feedItems border">
+            <div class="feedItemInfo flex">
+              <h1 class="feedItemUsername">Nichole K</h1>
+              <div class="likes flex">
+                <div id="likes2" class="likeCount">12 like(s)</div>
+                <button class="likeButton" onclick="addLike(1)">Like</button>
+              </div>
+            </div>
+            <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+          </div>
+          <div class="feedItems border">
+            <div class="feedItemInfo flex">
+              <h1 class="feedItemUsername">Jim R</h1>
+              <div class="likes flex">
+                <div id="likes3" class="likeCount">9 like(s)</div>
+                <button class="likeButton" onclick="addLike(2)">Like</button>
+              </div>
+            </div>
+            <p>
+              I can't stop listening to the <a href="#">new album</a>. Who else
+              is liking it?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
